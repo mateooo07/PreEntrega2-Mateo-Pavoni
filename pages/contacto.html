@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MasiPhone - Contacto</title>
+
+    <!-- Enlace a tu hoja de estilos principal -->
+    <link rel="stylesheet" href="../css/styles.css" />
+
+    <!-- Fuente personalizada -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- Logo de MasiPhone -->
+      <img src="../images/LOGO.jpg" alt="Logo MasiPhone" />
+
+      <!-- Menú de navegación -->
+      <nav>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./sobre-nosotros.html">Sobre Nosotros</a></li>
+          <li><a href="./productos.html">Productos</a></li>
+          <li><a href="./reseñas.html">Reseñas</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Título principal de la página de contacto -->
+      <h1>Contacto</h1>
+
+      <!-- Subtítulo o descripción breve -->
+      <h4>
+        Elige el modelo de iPhone que te interesa y cuéntanos tus preferencias.
+        ¡Nos pondremos en contacto contigo pronto!
+      </h4>
+
+      <!-- Formulario de contacto -->
+      <form>
+        <label>Nombre</label>
+        <input type="text" name="nombre" placeholder="Ingresa tu nombre" />
+
+        <label>Apellido</label>
+        <input type="text" name="apellido" placeholder="Ingresa tu apellido" />
+
+        <label>Email</label>
+        <input type="email" name="email" placeholder="Ingresa tu email" />
+
+        <label for="telefono">Teléfono</label>
+        <input
+          type="tel"
+          id="telefono"
+          name="telefono"
+          required
+          placeholder="Ingresa tu teléfono"
+        />
+
+        <label for="modelo">Modelo de iPhone</label>
+        <select id="modelo" name="modelo" required>
+          <option value="iPhone 13">iPhone 13</option>
+          <option value="iPhone 14">iPhone 14</option>
+          <option value="iPhone 15">iPhone 15</option>
+          <option value="iPhone 16">iPhone 16</option>
+        </select>
+
+        <label for="especificaciones">Especificaciones</label>
+        <textarea
+          id="especificaciones"
+          name="especificaciones"
+          required
+          placeholder="Ingresa tus especificaciones"
+        ></textarea>
+
+        <!-- Botón para enviar el formulario -->
+        <button>Enviar</button>
+      </form>
+    </main>
+
+    <footer>
+      <!-- Derechos de autor -->
+      <p>Copyright © 2025 MasiPhone. Todos los derechos reservados.</p>
+
+      <!-- Enlaces a redes sociales -->
+      <a
+        href="https://www.instagram.com/masiphonecba?igsh=MTJqZzJveXRja3E5Yw=="
+        target="_blank"
+      >
+        <img
+          src="../icons/Instagram.png"
+          alt="Instagram MasiPhone"
+          class="redes-sociales"
+        />
+      </a>
+      <a
+        href="https://www.facebook.com/share/18Rr95ZNR7/?mibextid=wwXIfr"
+        target="_blank"
+      >
+        <img
+          src="../icons/Facebook.png"
+          alt="Facebook MasiPhone"
+          class="redes-sociales"
+        />
+      </a>
+    </footer>
+  </body>
+</html>
