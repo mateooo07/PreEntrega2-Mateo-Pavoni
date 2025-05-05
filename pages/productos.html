@@ -4,96 +4,413 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MasiPhone - Productos</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
 
-    <!-- Enlace a la hoja de estilos principal -->
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="..."
+      crossorigin="anonymous"
+    />
+
+    <!-- Estilos personalizados -->
     <link rel="stylesheet" href="../css/styles.css" />
 
-    <!-- Fuente personalizada-->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope&display=swap"
-      rel="stylesheet"
-    />
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto...&display=swap" rel="stylesheet">
+
+    <!-- Iconos de Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   </head>
   <body>
-    <header>
-      <!-- Logo de MasiPhone -->
-      <img src="../images/LOGO.jpg" alt="Logo MasiPhone" />
+    <!-- Encabezado y barra de navegación -->
+<header>
+  <nav class="navbar navbar-expand-lg bg-black navbar-dark">
+    <div class="container-fluid">
+      <!-- Logo / Marca -->
+      <a class="navbar-brand" href="../index.html">MasiPhone</a>
 
-      <!-- Menú de navegación -->
-      <nav>
-        <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="./sobre-nosotros.html">Sobre Nosotros</a></li>
-          <li><a href="./productos.html">Productos</a></li>
-          <li><a href="./reseñas.html">Reseñas</a></li>
-          <li><a href="./contacto.html">Contacto</a></li>
+      <!-- Botón para colapsar el menú en pantallas pequeñas -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Elementos del menú -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <!-- Enlaces del menú -->
+          <li class="nav-item">
+            <a class="nav-link" href="./contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="./productos.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./preguntas-frecuentes.html">Preguntas Frecuentes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./sobre-nosotros.html">Sobre Nosotros</a>
+          </li>
         </ul>
-      </nav>
-    </header>
-
-    <main>
-      <!-- Título principal de la página de Productos -->
-      <h1>Productos</h1>
-
-      <!-- Producto: iPhone 13 -->
-      <div class="productos">
-        <img src="../images/iPhone 13.jpg" alt="iPhone 13" class="iphones" />
-        <h2>iPhone 13</h2>
-        <!-- Información de colores -->
-        <p>Colores: Azul, Negro, Blanco, Rojo.</p>
-        <!-- Información de tamaño de memorias -->
-        <p>Memoria: 128GB, 256GB, 512GB.</p>
       </div>
+    </div>
+  </nav>
+</header>
 
-      <!-- Producto: iPhone 14 -->
-      <div class="productos">
-        <img src="../images/iPhone 14.jpg" alt="iPhone 14" class="iphones" />
-        <h2>iPhone 14</h2>
-        <p>Colores: Medianoche, Azul, Rojo, Púrpura.</p>
-        <p>Memoria: 128GB, 256GB, 512GB.</p>
-      </div>
+<main>
+  <!-- Sección con imagen del iPhone 16 -->
+  <section id="iPhone16-foto" class="mb-5">
+    <!-- Nombre del iPhone 16 -->
+    <img src="../images/nombre-iphone-16.png" alt="iPhone 16" class="img-fluid" id="nombre-iphone-16" />
+    <!-- Imagen del banner del iPhone 16 -->
+    <img src="../images/iPhone-16(banner).jpg" alt="iPhone 16" class="img-fluid" />
+  </section>
 
-      <!-- Producto: iPhone 15 -->
-      <div class="productos">
-        <img src="../images/iPhone 15.jpg" alt="iPhone 15" class="iphones" />
-        <h2>iPhone 15</h2>
-        <p>Colores: Negro, Azul, Verde, Rosa, Amarillo.</p>
-        <p>Memoria: 128GB, 256GB, 512GB.</p>
-      </div>
+  <!-- Sección de productos (iPhones) -->
+  <section id="productos">
+    <!-- Contenedor del título y subtítulo -->
+    <div class="container-fluid" id="titulo-productos">
+      <h1 class="mb-5 titulo">Encontrá el iPhone para vos.</h1>
+      <h4 class="mb-5 subtitulo">Compara los distintos modelos de iPhone</h4>
+    </div>
 
-      <!-- Producto: iPhone 16 -->
-      <div class="productos">
-        <img src="../images/iPhone 16.jpg" alt="iPhone 16" class="iphones" />
-        <h2>iPhone 16</h2>
-        <p>Colores: Negro, Plata, Azul, Oro.</p>
-        <p>Memoria: 256GB, 512GB, 1TB.</p>
+    <!-- Contenedor general de las tarjetas de productos -->
+    <div class="cards-container">
+          <div class="row g-2 g-y-2">
+            <div class="col-md-3 col-6 mb-3" >
+              <div class="card h-100 mx-auto"  style="max-width: 350px;">
+                <img src="../images/Celus/iPhone 11.jpg" class="card-img-top" alt="iPhone 11">
+                <div class="card-body">
+                  <h5 class="card-title">iPhone 11</h5>
+                  <p class="card-text">Un modelo confiable con gran rendimiento, cámara dual y una experiencia fluida para el día a día.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Colores: Negro, Blanco, Verde, Amarillo, Púrpura, Rojo.</li>
+                  <li class="list-group-item">Almacenamiento: 64 GB, 128 GB, 256 GB.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 col-6 mb-3" >
+              <div class="card h-100 mx-auto"  style="max-width: 350px;">
+                <img src="../images/Celus/iPhone 11 Pro.jpg" class="card-img-top" alt="iPhone 11 Pro">
+                <div class="card-body">
+                  <h5 class="card-title">iPhone 11 Pro</h5>
+                  <p class="card-text">Diseño premium, pantalla OLED y triple cámara para capturar fotos profesionales.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Colores: Oro, Plata, Gris espacial, Verde medianoche.</li>
+                  <li class="list-group-item">Almacenamiento: 64 GB, 256 GB, 512 GB</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 col-6 mb-3" >
+              <div class="card h-100 mx-auto"  style="max-width: 350px;">
+                <img src="../images/Celus/iPhone 11 Pro Max.jpg" class="card-img-top" alt="iPhone 11 Pro Max">
+                <div class="card-body">
+                  <h5 class="card-title">iPhone 11 Pro Max</h5>
+                  <p class="card-text">Pantalla más grande, batería de larga duración y potencia ideal para usuarios exigentes.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Colores: Oro, Plata, Gris espacial, Verde medianoche.</li>
+                  <li class="list-group-item">Almacenamiento: 64 GB, 256 GB, 512 GB</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 col-6 mb-3" >
+              <div class="card h-100 mx-auto"  style="max-width: 350px;">
+                <img src="../images/Celus/iPhone 12.jpg" class="card-img-top" alt="iPhone 12">
+                <div class="card-body">
+                  <h5 class="card-title">iPhone 12</h5>
+                  <p class="card-text">Diseño con bordes planos, compatibilidad con 5G y un rendimiento veloz para todos los usos.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Colores: Negro, Blanco, Azul, Verde, Rojo, Púrpura.</li>
+                  <li class="list-group-item">Almacenamiento: 64 GB, 128 GB, 256 GB</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row g-3">
+              <div class="col-md-3 col-6 mb-3" >
+                <div class="card h-100 mx-auto"  style="max-width: 350px;">
+                  <img src="../images/Celus/iPhone 12 Mini.jpg" class="card-img-top" alt="iPhone 12 Mini">
+                  <div class="card-body">
+                    <h5 class="card-title">iPhone 12 Mini</h5>
+                    <p class="card-text">Toda la potencia del iPhone 12 en un formato compacto y cómodo de manejar con una sola mano.</p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Colores: Negro, Blanco, Azul, Verde, Rojo, Púrpura.</li>
+                    <li class="list-group-item">Almacenamiento: 64 GB, 128 GB, 256 GB.</li>
+                  </ul>
+                </div>
+            </div>
+            <div class="col-md-3 col-6 mb-3" >
+              <div class="card h-100 mx-auto"  style="max-width: 350px;">
+                <img src="../images/Celus/iPhone 12 Pro.jpg" class="card-img-top" alt="iPhone 12 Pro">
+                <div class="card-body">
+                  <h5 class="card-title">iPhone 12 Pro</h5>
+                  <p class="card-text">Ideal para fotografía avanzada y video en alta calidad, con diseño elegante y potente.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Colores: Oro, Plata, Grafito, Azul pacífico.</li>
+                  <li class="list-group-item">Almacenamiento: 128 GB, 256 GB, 512 GB.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 col-6 mb-3" >
+              <div class="card h-100 mx-auto"  style="max-width: 350px;">
+                <img src="../images/Celus/iPhone 12 Pro Max.jpg" class="card-img-top" alt="iPhone 12 Pro Max">
+                <div class="card-body">
+                  <h5 class="card-title">iPhone 12 Pro Max</h5>
+                  <p class="card-text">Pantalla amplia, cámaras mejoradas y batería que dura todo el día, ideal para creadores de contenido..</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Colores: Oro, Plata, Grafito, Azul pacífico.</li>
+                  <li class="list-group-item">Almacenamiento: 128 GB, 256 GB, 512 GB.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 col-6 mb-3" >
+              <div class="card h-100 mx-auto"  style="max-width: 350px;">
+                <img src="../images/Celus/iPhone 13.jpg" class="card-img-top" alt="iPhone 13">
+                <div class="card-body">
+                  <h5 class="card-title">iPhone 13</h5>
+                  <p class="card-text">Mayor autonomía, nuevo diseño de cámaras y colores vibrantes en un iPhone versátil.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Colores: Medianoche, Luz de estrella, Azul, Rosa, Verde,Rojo.</li>
+                  <li class="list-group-item">Almacenamiento: 128 GB, 256 GB, 512 GB</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row g-3">
+            <div class="col-md-3 col-6 mb-3" >
+              <div class="card h-100 mx-auto"  style="max-width: 350px;">
+                <img src="../images/Celus/iPhone 13 Pro.jpg" class="card-img-top" alt="iPhone 13 Pro">
+                <div class="card-body">
+                  <h5 class="card-title">iPhone 13 Pro</h5>
+                  <p class="card-text">Pantalla ProMotion, gran fluidez y cámaras que se adaptan a cualquier entorno.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Colores: Grafito, Plata, Oro, Azul sierra, Verde alpino.</li>
+                  <li class="list-group-item">Almacenamiento: 128 GB, 256 GB, 512 GB, 1 TB.</li>
+                </ul>
+              </div>
+          </div>
+          <div class="col-md-3 col-6 mb-3" >
+            <div class="card h-100 mx-auto"  style="max-width: 350px;">
+              <img src="../images/Celus/iPhone 13 Pro Max.jpg" class="card-img-top" alt="iPhone 13 Pro Max">
+              <div class="card-body">
+                <h5 class="card-title">iPhone 13 Pro Max</h5>
+                <p class="card-text">Rendimiento premium con la mejor batería de la serie, ideal para usuarios intensivos.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Colores: Grafito, Plata, Oro, Azul sierra, Verde alpino.</li>
+                <li class="list-group-item">Almacenamiento: 128 GB, 256 GB, 512 GB, 1 TB.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 col-6 mb-3" >
+            <div class="card h-100 mx-auto"  style="max-width: 350px;">
+              <img src="../images/Celus/iPhone 14.jpg" class="card-img-top" alt="iPhone 14">
+              <div class="card-body">
+                <h5 class="card-title">iPhone 14</h5>
+                <p class="card-text">Estilo renovado, detección de accidentes y una cámara aún más potente para todos los días.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Colores: Medianoche, Luz de estrella, Azul, Púrpura, Rojo, Amarillo.</li>
+                <li class="list-group-item">Almacenamiento: 128 GB, 256 GB, 512 GB.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 col-6 mb-3" >
+            <div class="card h-100 mx-auto"  style="max-width: 350px;">
+              <img src="../images/Celus/iPhone 14 Pro.jpg" class="card-img-top" alt="iPhone 14 Pro">
+              <div class="card-body">
+                <h5 class="card-title">iPhone 14 Pro</h5>
+                <p class="card-text">Pantalla Always-On, Dynamic Island y cámaras de nivel profesional en tu bolsillo.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Colores: Negro espacial, Plata, Oro, Púrpura intenso.</li>
+                <li class="list-group-item">Almacenamiento: 128 GB, 256 GB, 512 GB, 1 TB.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row g-3">
+          <div class="col-md-3 col-6 mb-3" >
+            <div class="card h-100 mx-auto"  style="max-width: 350px;">
+              <img src="../images/Celus/iPhone 14 Pro Max.jpg" class="card-img-top" alt="iPhone 14 Pro Max">
+              <div class="card-body">
+                <h5 class="card-title">iPhone 14 Pro Max</h5>
+                <p class="card-text">El iPhone más completo de ese momento, con tecnología de punta y autonomía excepcional.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Colores: Negro espacial, Plata, Oro, Púrpura intenso.</li>
+                <li class="list-group-item">Almacenamiento: 128 GB, 256 GB, 512 GB, 1 TB.</li>
+              </ul>
+            </div>
+        </div>
+        <div class="col-md-3 col-6 mb-3" >
+          <div class="card h-100 mx-auto"  style="max-width: 350px;">
+            <img src="../images/Celus/iPhone 15.jpg" class="card-img-top" alt="iPhone 15">
+            <div class="card-body">
+              <h5 class="card-title">iPhone 15</h5>
+              <p class="card-text">Nuevo diseño con puerto USB-C, colores suaves y una experiencia más fluida.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Colores: Negro, Azul, Verde, Amarillo, Rosa.</li>
+              <li class="list-group-item">Almacenamiento: 128 GB, 256 GB, 512 GB</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3 col-6 mb-3" >
+          <div class="card h-100 mx-auto"  style="max-width: 350px;">
+            <img src="../images/Celus/iPhone 15 Pro.jpg" class="card-img-top" alt="iPhone 15 Pro">
+            <div class="card-body">
+              <h5 class="card-title">iPhone 15 Pro</h5>
+              <p class="card-text">Fabricado en titanio, más liviano y potente, ideal para juegos y tareas exigentes.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Colores: Titanio natural, Titanio blanco, Titanio azul, Titanio negro.</li>
+              <li class="list-group-item">Almacenamiento: 128 GB, 256 GB, 512 GB, 1 TB.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3 col-6 mb-3" >
+          <div class="card h-100 mx-auto"  style="max-width: 350px;">
+            <img src="../images/Celus/iPhone 15 Pro Max.jpg" class="card-img-top" alt="iPhone 15 Pro Max">
+            <div class="card-body">
+              <h5 class="card-title">iPhone 15 Pro Max</h5>
+              <p class="card-text">Zoom mejorado, cuerpo de titanio y todo el poder de Apple en su forma más pro.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Colores: Titanio natural, Titanio blanco, Titanio azul, Titanio negro.</li>
+              <li class="list-group-item">Almacenamiento: 256 GB, 512 GB, 1 TB.</li>
+            </ul>
+          </div>
+        </div>
       </div>
+      <div class="row g-3">
+        <div class="col-md-3 col-6 mb-3" >
+          <div class="card h-100 mx-auto"  style="max-width: 350px;">
+            <img src="../images/Celus/iPhone 16.jpg" class="card-img-top" alt="iPhone 16">
+            <div class="card-body">
+              <h5 class="card-title">iPhone 16</h5>
+              <p class="card-text">La nueva generación de iPhone, con mejoras en rendimiento y una experiencia aún más intuitiva.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Colores: Ultramar, Verde Azulado, Rosa, Blanco, Negro.</li>
+              <li class="list-group-item">Almacenamiento: 128GB, 256GB, 512GB.</li>
+            </ul>
+          </div>
+      </div>
+      <div class="col-md-3 col-6 mb-3" >
+        <div class="card h-100 mx-auto"  style="max-width: 350px;">
+          <img src="../images/Celus/iPhone 16 Plus.jpg" class="card-img-top" alt="iPhone 16 Plus">
+          <div class="card-body">
+            <h5 class="card-title">iPhone 16 Plus</h5>
+            <p class="card-text">Una pantalla más grande para disfrutar al máximo de tus contenidos, manteniendo la potencia y el diseño elegante del iPhone.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Colores: Ultramar, Verde Azulado, Rosa, Blanco, Negro.</li>
+            <li class="list-group-item">Almacenamiento: 128GB, 256GB, 512GB.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 col-6 mb-3" ">
+        <div class="card h-100 mx-auto" style="max-width: 350px; margin-bottom: 10rem;">
+          <img src="../images/Celus/iPhone 16 Pro.jpg" class="card-img-top" alt="iPhone 16 Pro">
+          <div class="card-body">
+            <h5 class="card-title">iPhone 16 Pro</h5>
+            <p class="card-text">Rendimiento de vanguardia, innovaciones en fotografía y un diseño sofisticado para los usuarios más exigentes.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Colores: Titanio negro, Titanio blanco, Titanium natural, Titanio del desierto.</li>
+            <li class="list-group-item">Almacenamiento: 128GB, 256 GB, 512 GB, 1 TB.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 col-6 mb-3" >
+        <div class="card h-100 mx-auto"  style="max-width: 350px;">
+          <img src="../images/Celus/iPhone 16 Pro Max.jpg" class="card-img-top" alt="iPhone 16 Pro Max">
+          <div class="card-body">
+            <h5 class="card-title">iPhone 16 Pro Max</h5>
+            <p class="card-text">La máxima expresión del iPhone: zoom avanzado, materiales de primera calidad y toda la potencia de Apple en su formato más grande y profesional.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Colores: Titanio negro, Titanio blanco, Titanium natural, Titanio del desierto.</li>
+            <li class="list-group-item">Almacenamiento: 256 GB, 512 GB, 1 TB.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+      </section>
+
+      <!-- Avisos legales -->
+      <section id="avisos-legales" class="mb-5 my-4 rounded">
+          <h4>Avisos legales</h4>
+        
+          <p><strong>Apple Intelligence:</strong> Apple Intelligence estará disponible a finales de 2024 en versión beta con una actualización de iOS 18 en todos los modelos de iPhone 16, en el iPhone 15 Pro y en el iPhone 15 Pro Max, con Siri y el idioma del dispositivo configurados en inglés de Estados Unidos. Algunas funcionalidades y la disponibilidad en otros idiomas se irán agregando en el transcurso del próximo año.</p>
+        
+          <p><strong>Pantalla:</strong> La pantalla tiene esquinas redondeadas que siguen el elegante diseño curvo del teléfono, y las esquinas se encuentran dentro de un rectángulo estándar. Si se mide en forma de rectángulo estándar, la pantalla tiene 6.12 pulgadas (iPhone 16), 6.69 pulgadas (iPhone 16 Plus), 6.27 pulgadas (iPhone 16 Pro) o 6.86 pulgadas (iPhone 16 Pro Max) en diagonal. El área real de visualización es menor.</p>
+        
+          <p><strong>Energía y batería:</strong> La duración de la batería varía según el uso y la configuración. Para obtener más información, visita <a href="https://www.apple.com/la/batteries" target="_blank">apple.com/la/batteries</a>.</p>
+        
+          <p><strong>(PRODUCT)RED:</strong> Una parte de lo recaudado con la venta de cada iPhone se destinará al Fondo Mundial de lucha contra el sida y contribuye a financiar programas esenciales de salud que ayudan a salvar vidas. Para obtener más información, visita <a href="https://www.apple.com/la/product-red" target="_blank">apple.com/la/product-red</a>.</p>
+        
+          <p><strong>Detección de Choques:</strong> Los modelos de iPhone 16 pueden detectar si sufres un accidente de auto grave y pedir ayuda. Requiere conexión celular o llamadas por Wi-Fi</p>
+        
+          <p><strong>Seguridad:</strong> El iPhone 15 y el iPhone 15 Pro pueden detectar si sufres un accidente de auto grave y pedir ayuda. Requiere conexión celular o llamadas por Wi-Fi. Las funcionalidades Emergencia SOS y Detección de Choques requieren conexión celular o llamadas por Wi-Fi. Las llamadas por Wi-Fi podrían no estar disponibles en todos los países.</p>
+        
+          <p> <strong>Accesorios MagSafe:</strong> Los colores mostrados son meramente ilustrativos. Los accesorios MagSafe se venden por separado.</p>
+
+          <p><strong>Disponibilidad de funcionalidades:</strong> Algunas funcionalidades podrían no estar disponibles en todos los países o áreas.</p>
+        </section>
     </main>
-
+    <!-- Pie de página con logo y redes -->
     <footer>
-      <!-- Derechos de autor -->
-      <p>Copyright © 2025 MasiPhone. Todos los derechos reservados.</p>
-      <!-- Enlaces a redes sociales -->
-      <a
-        href="https://www.instagram.com/masiphonecba?igsh=MTJqZzJveXRja3E5Yw=="
-        target="_blank"
-      >
-        <img
-          src="../icons/Instagram.png"
-          alt="Instagram MasiPhone"
-          class="redes-sociales"
-        />
-      </a>
-      <a
-        href="https://www.facebook.com/share/18Rr95ZNR7/?mibextid=wwXIfr"
-        target="_blank"
-      >
-        <img
-          src="../icons/Facebook.png"
-          alt="Facebook MasiPhone"
-          class="redes-sociales"
-        />
-      </a>
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col-12 col-md-4">
+            <img src="../icons/logo.png" alt="logo" class="img-fluid w-50 ">
+          </div>
+    
+          <div class="col-12 col-md-8 my-2" id="redes-sociales">
+            <a href="https://www.instagram.com/masiphonecba/" target="_blank" class="text-light me-3"><i class="fa-brands fa-instagram"></i></i></a>
+            <a href="https://www.facebook.com/cm.arg.3" target="_blank" class="text-light me-3"><i class="fa-brands fa-facebook"></i></a>
+          </div>
+        </div>
+    
+        <hr class="bg-secondary" />
+        <div class="text-center small">
+          &copy; 2025 MasiPhone. Todos los derechos reservados.
+        </div>
+      </div>
     </footer>
+    <!-- Bootstrap JS -->
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"
+  ></script>
   </body>
+  
 </html>
