@@ -20,7 +20,7 @@
     />
 
     <!-- Estilos personalizados -->
-    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/main.css" />
 
     <!-- Fuentes de Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,6 +29,13 @@
 
     <!-- Iconos de Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- ANIMATE CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   </head>
   <body>
     <!-- Encabezado y barra de navegación -->
@@ -75,25 +82,35 @@
 
 <main>
   <!-- Sección con imagen del iPhone 16 -->
-  <section id="iPhone16-foto" class="mb-5">
+  <section id="iPhone16-foto">
     <!-- Nombre del iPhone 16 -->
-    <img src="../images/nombre-iphone-16.png" alt="iPhone 16" class="img-fluid" id="nombre-iphone-16" />
+    <img src="../images/nombre-iphone-16.png" alt="iPhone 16 nombre" class="img-fluid" id="nombre-iphone-16" />
     <!-- Imagen del banner del iPhone 16 -->
-    <img src="../images/iPhone-16(banner).jpg" alt="iPhone 16" class="img-fluid" />
+    <img src="../images/iPhone-16(banner).jpg" alt="iPhone 16" class="img-fluid w-100 d-none d-md-block" />
+    <img src="../images/iPhone 16 Mobile.png" alt="iPhone 16 Mobile" class="img-fluid w-100 d-block d-md-none" id="nombre-iphone-16-mobile" />
+  </section>
+
+  <!-- Sección con imagen del iPhone 15 Pro-->
+  <section id="iPhone-foto" class="mb-5">
+    <img src="../images/iPhone_foto.png" alt="iPhone" class="img-fluid w-100 d-none d-md-block" />
+    <img src="../images/iPhone_foto_mobile.png" alt="iPhone Mobile" class="img-fluid w-100 d-block d-md-none" />
   </section>
 
   <!-- Sección de productos (iPhones) -->
   <section id="productos">
     <!-- Contenedor del título y subtítulo -->
     <div class="container-fluid" id="titulo-productos">
-      <h1 class="mb-5 titulo">Encontrá el iPhone para vos.</h1>
-      <h4 class="mb-5 subtitulo">Compara los distintos modelos de iPhone</h4>
+      <div data-aos="zoom-out-down" data-aos-delay="150">
+        <h1 class="mb-5 titulo">Encontrá el iPhone para vos.</h1>
+        <h4 class="mb-5 subtitulo">Compara los distintos modelos de iPhone</h4>
+      </div>
     </div>
 
     <!-- Contenedor general de las tarjetas de productos -->
-    <div class="cards-container">
-          <div class="row g-2 g-y-2">
-            <div class="col-md-3 col-6 mb-3" >
+    <div class="cards-container iphones-container">
+      <div data-aos="fade-up" data-aos-delay="150">
+          <div class="row g-3">
+            <div class="col-12 col-sm-6 col-lg-3 mb-2" >
               <div class="card h-100 mx-auto"  style="max-width: 350px;">
                 <img src="../images/Celus/iPhone 11.jpg" class="card-img-top" alt="iPhone 11">
                 <div class="card-body">
@@ -106,7 +123,7 @@
                 </ul>
               </div>
             </div>
-            <div class="col-md-3 col-6 mb-3" >
+            <div class="col-12 col-sm-6 col-lg-3 mb-2" >
               <div class="card h-100 mx-auto"  style="max-width: 350px;">
                 <img src="../images/Celus/iPhone 11 Pro.jpg" class="card-img-top" alt="iPhone 11 Pro">
                 <div class="card-body">
@@ -119,7 +136,7 @@
                 </ul>
               </div>
             </div>
-            <div class="col-md-3 col-6 mb-3" >
+            <div class="col-12 col-sm-6 col-lg-3 mb-2" >
               <div class="card h-100 mx-auto"  style="max-width: 350px;">
                 <img src="../images/Celus/iPhone 11 Pro Max.jpg" class="card-img-top" alt="iPhone 11 Pro Max">
                 <div class="card-body">
@@ -132,7 +149,7 @@
                 </ul>
               </div>
             </div>
-            <div class="col-md-3 col-6 mb-3" >
+            <div class="col-12 col-sm-6 col-lg-3 mb-2" >
               <div class="card h-100 mx-auto"  style="max-width: 350px;">
                 <img src="../images/Celus/iPhone 12.jpg" class="card-img-top" alt="iPhone 12">
                 <div class="card-body">
@@ -146,8 +163,10 @@
               </div>
             </div>
           </div>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="150">
           <div class="row g-3">
-              <div class="col-md-3 col-6 mb-3" >
+              <div class="col-12 col-sm-6 col-lg-3 mb-2" >
                 <div class="card h-100 mx-auto"  style="max-width: 350px;">
                   <img src="../images/Celus/iPhone 12 Mini.jpg" class="card-img-top" alt="iPhone 12 Mini">
                   <div class="card-body">
@@ -160,7 +179,7 @@
                   </ul>
                 </div>
             </div>
-            <div class="col-md-3 col-6 mb-3" >
+            <div class="col-12 col-sm-6 col-lg-3 mb-2" >
               <div class="card h-100 mx-auto"  style="max-width: 350px;">
                 <img src="../images/Celus/iPhone 12 Pro.jpg" class="card-img-top" alt="iPhone 12 Pro">
                 <div class="card-body">
@@ -173,7 +192,7 @@
                 </ul>
               </div>
             </div>
-            <div class="col-md-3 col-6 mb-3" >
+            <div class="col-12 col-sm-6 col-lg-3 mb-2" >
               <div class="card h-100 mx-auto"  style="max-width: 350px;">
                 <img src="../images/Celus/iPhone 12 Pro Max.jpg" class="card-img-top" alt="iPhone 12 Pro Max">
                 <div class="card-body">
@@ -186,7 +205,7 @@
                 </ul>
               </div>
             </div>
-            <div class="col-md-3 col-6 mb-3" >
+            <div class="col-12 col-sm-6 col-lg-3 mb-2" >
               <div class="card h-100 mx-auto"  style="max-width: 350px;">
                 <img src="../images/Celus/iPhone 13.jpg" class="card-img-top" alt="iPhone 13">
                 <div class="card-body">
@@ -200,8 +219,10 @@
               </div>
             </div>
           </div>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="150">
           <div class="row g-3">
-            <div class="col-md-3 col-6 mb-3" >
+            <div class="col-12 col-sm-6 col-lg-3 mb-2" >
               <div class="card h-100 mx-auto"  style="max-width: 350px;">
                 <img src="../images/Celus/iPhone 13 Pro.jpg" class="card-img-top" alt="iPhone 13 Pro">
                 <div class="card-body">
@@ -214,7 +235,7 @@
                 </ul>
               </div>
           </div>
-          <div class="col-md-3 col-6 mb-3" >
+          <div class="col-12 col-sm-6 col-lg-3 mb-2" >
             <div class="card h-100 mx-auto"  style="max-width: 350px;">
               <img src="../images/Celus/iPhone 13 Pro Max.jpg" class="card-img-top" alt="iPhone 13 Pro Max">
               <div class="card-body">
@@ -227,7 +248,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-md-3 col-6 mb-3" >
+          <div class="col-12 col-sm-6 col-lg-3 mb-2" >
             <div class="card h-100 mx-auto"  style="max-width: 350px;">
               <img src="../images/Celus/iPhone 14.jpg" class="card-img-top" alt="iPhone 14">
               <div class="card-body">
@@ -240,7 +261,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-md-3 col-6 mb-3" >
+          <div class="col-12 col-sm-6 col-lg-3 mb-2" >
             <div class="card h-100 mx-auto"  style="max-width: 350px;">
               <img src="../images/Celus/iPhone 14 Pro.jpg" class="card-img-top" alt="iPhone 14 Pro">
               <div class="card-body">
@@ -254,8 +275,10 @@
             </div>
           </div>
         </div>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="150">
         <div class="row g-3">
-          <div class="col-md-3 col-6 mb-3" >
+          <div class="col-12 col-sm-6 col-lg-3 mb-2" >
             <div class="card h-100 mx-auto"  style="max-width: 350px;">
               <img src="../images/Celus/iPhone 14 Pro Max.jpg" class="card-img-top" alt="iPhone 14 Pro Max">
               <div class="card-body">
@@ -268,7 +291,7 @@
               </ul>
             </div>
         </div>
-        <div class="col-md-3 col-6 mb-3" >
+        <div class="col-12 col-sm-6 col-lg-3 mb-2" >
           <div class="card h-100 mx-auto"  style="max-width: 350px;">
             <img src="../images/Celus/iPhone 15.jpg" class="card-img-top" alt="iPhone 15">
             <div class="card-body">
@@ -281,7 +304,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-md-3 col-6 mb-3" >
+        <div class="col-12 col-sm-6 col-lg-3 mb-2" >
           <div class="card h-100 mx-auto"  style="max-width: 350px;">
             <img src="../images/Celus/iPhone 15 Pro.jpg" class="card-img-top" alt="iPhone 15 Pro">
             <div class="card-body">
@@ -294,7 +317,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-md-3 col-6 mb-3" >
+        <div class="col-12 col-sm-6 col-lg-3 mb-2" >
           <div class="card h-100 mx-auto"  style="max-width: 350px;">
             <img src="../images/Celus/iPhone 15 Pro Max.jpg" class="card-img-top" alt="iPhone 15 Pro Max">
             <div class="card-body">
@@ -308,8 +331,10 @@
           </div>
         </div>
       </div>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="150">
       <div class="row g-3">
-        <div class="col-md-3 col-6 mb-3" >
+        <div class="col-12 col-sm-6 col-lg-3 mb-2" >
           <div class="card h-100 mx-auto"  style="max-width: 350px;">
             <img src="../images/Celus/iPhone 16.jpg" class="card-img-top" alt="iPhone 16">
             <div class="card-body">
@@ -322,7 +347,7 @@
             </ul>
           </div>
       </div>
-      <div class="col-md-3 col-6 mb-3" >
+      <div class="col-12 col-sm-6 col-lg-3 mb-2" >
         <div class="card h-100 mx-auto"  style="max-width: 350px;">
           <img src="../images/Celus/iPhone 16 Plus.jpg" class="card-img-top" alt="iPhone 16 Plus">
           <div class="card-body">
@@ -335,8 +360,8 @@
           </ul>
         </div>
       </div>
-      <div class="col-md-3 col-6 mb-3" ">
-        <div class="card h-100 mx-auto" style="max-width: 350px; margin-bottom: 10rem;">
+      <div class="col-12 col-sm-6 col-lg-3 mb-2" ">
+        <div class="card h-100 mx-auto" style="max-width: 350px;">
           <img src="../images/Celus/iPhone 16 Pro.jpg" class="card-img-top" alt="iPhone 16 Pro">
           <div class="card-body">
             <h5 class="card-title">iPhone 16 Pro</h5>
@@ -348,7 +373,7 @@
           </ul>
         </div>
       </div>
-      <div class="col-md-3 col-6 mb-3" >
+      <div class="col-12 col-sm-6 col-lg-3 mb-2" >
         <div class="card h-100 mx-auto"  style="max-width: 350px;">
           <img src="../images/Celus/iPhone 16 Pro Max.jpg" class="card-img-top" alt="iPhone 16 Pro Max">
           <div class="card-body">
@@ -361,6 +386,7 @@
           </ul>
         </div>
       </div>
+    </div>
     </div>
       </section>
 
@@ -411,6 +437,11 @@
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"
   ></script>
+    <!-- AOS JS --> 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
   </body>
   
 </html>

@@ -1,0 +1,155 @@
+@charset "UTF-8";
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f7fb;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+#accesorios-destacados,
+#banner,
+#acordeones,
+cards-container,
+#titulo-productos {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  #accesorios-destacados,
+  #banner,
+  #acordeones,
+  cards-container,
+  #titulo-productos {
+    max-width: 400px;
+  }
+}
+
+footer {
+  background-color: black;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  #redes-sociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+
+.card-body,
+.formulario,
+#avisos-legales {
+  background-color: #fff;
+}
+
+.formulario {
+  border: 1px solid black;
+}
+
+#avisos-legales {
+  padding: 1rem;
+  margin-top: 3rem;
+}
+#avisos-legales p,
+#avisos-legales h4 {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.carousel .card {
+  height: 390px;
+}
+
+#cardCarrusel-info-general {
+  max-width: 100%;
+  height: 162px;
+}
+#cardCarrusel-info-general .carousel-item,
+#cardCarrusel-info-general .card {
+  height: 100%;
+}
+
+.titulo {
+  font-size: 4rem;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .titulo {
+    font-size: 3rem;
+  }
+}
+
+.subtitulo {
+  font-size: 2rem;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .subtitulo {
+    font-size: 1.5rem;
+  }
+}
+
+#nombre-iphone-16 {
+  position: absolute;
+  top: 8rem;
+  left: 45%;
+  width: 10%;
+}
+@media (max-width: 768px) {
+  #nombre-iphone-16 {
+    display: none;
+  }
+}
+
+i {
+  color: white;
+  font-size: 3rem;
+  margin: 0.5rem;
+}
+
+#banner img {
+  margin-bottom: 3rem;
+  height: 400px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  #header-reseñas img {
+    margin-bottom: -0.5rem;
+    height: 20vh;
+    width: auto;
+  }
+}
+
+#banner-contacto img {
+  max-height: 40rem;
+  width: auto;
+}
+
+#container-img-sobre-nosotros {
+  height: 40rem;
+  width: 40rem;
+}
+@media (max-width: 768px) {
+  #container-img-sobre-nosotros {
+    height: 20rem;
+    width: 20rem;
+    margin: 0 auto;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

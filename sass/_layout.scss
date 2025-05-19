@@ -1,0 +1,26 @@
+@use "variables";
+@use "mixins";
+
+#accesorios-destacados,
+#banner,
+#acordeones,
+cards-container,
+#titulo-productos {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  @include mixins.responsive(768px) {
+    max-width: 400px;
+  }
+}
+
+footer {
+  background-color: variables.$color-negro;
+  color: variables.$color-texto;
+}
+
+#redes-sociales {
+  @media (min-width: 768px) {
+    @include mixins.flex-center();
+  }
+}

@@ -1,0 +1,32 @@
+@use "variables";
+@use "mixins";
+
+#banner img {
+  margin-bottom: 3rem;
+  height: 400px;
+  width: 100%;
+}
+
+#header-reseñas img {
+  @include mixins.responsive(768px) {
+    margin-bottom: -0.5rem;
+    height: 20vh;
+    width: auto;
+  }
+}
+
+#banner-contacto img {
+  max-height: 40rem;
+  width: auto;
+}
+
+#container-img-sobre-nosotros {
+  height: 40rem;
+  width: 40rem;
+
+  @include mixins.responsive(768px) {
+    height: 20rem;
+    width: 20rem;
+    margin: 0 auto;
+  }
+}

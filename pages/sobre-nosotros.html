@@ -13,7 +13,7 @@
     />
 
     <!-- Estilos personalizados -->
-    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/main.css" />
 
     <!-- Fuentes de Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,6 +22,10 @@
 
     <!-- Iconos de Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- ANIMATE CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
   </head>
   <body>
       <!-- Encabezado y barra de navegación -->
@@ -68,8 +72,8 @@
 
 <main>
   <!-- Sección de cabecera con imagen de banner para reseñas -->
-  <section id="header-reseñas" class="mb-5">
-    <img src="../images/bannerReseñas.jpg" alt="banner" class="img-fluid" />
+  <section id="header-reseñas" class="mb-md-5 mb-1">
+    <img src="../images/bannerReseñas.jpg" alt="banner" class="img-fluid w-100" />
   </section>
 
   <!-- Sección informativa "Acerca de MasiPhone" con fondo claro -->
@@ -77,41 +81,43 @@
     <div class="container">
       <div class="row align-items-center">
         <!-- Columna de texto descriptivo sobre la empresa -->
-        <div class="col-lg-6 mb-4 mb-lg-0">
-          <!-- Título principal con estilo destacado -->
-          <h2 class="display-4 fw-bold text-primary">Acerca de MasiPhone</h2>
+        <div class="col-12 col-lg-6 mb-5 mb-lg-0 text-center text-md-start">
+          <h2 class="display-4 fw-bold text-primary animate__animated animate__backInDown" id="titulo-sobre-nosotros">
+            Acerca de MasiPhone
+          </h2>
 
-          <!-- Párrafos con la misión y valores de la empresa -->
-          <p class="lead">
-            Somos MasiPhone, una empresa joven de Córdoba nacida con la misión de acercar la experiencia Apple a más personas, ofreciendo exclusivamente iPhones de última generación a precios competitivos.
-          </p>
+          <div class="animate__animated animate__backInLeft animate_slow">
+            <p class="lead fs-3">
+              Somos MasiPhone, una empresa joven de Córdoba nacida con la misión de acercar la experiencia Apple a más personas, ofreciendo exclusivamente iPhones de última generación a precios competitivos.
+            </p>
 
-          <p>
-            Aunque contamos con solo un año en el mercado, nuestra pasión por la tecnología y el compromiso con nuestros clientes nos posicionan como una opción confiable.
-          </p>
+            <p class="lead fs-3">
+              Aunque contamos con solo un año en el mercado, nuestra pasión por la tecnología y el compromiso con nuestros clientes nos posicionan como una opción confiable.
+            </p>
 
-          <p>
-            No ofrecemos servicio técnico oficial, pero brindamos asesoramiento honesto y útil para el cuidado y elección de tu equipo.
-          </p>
+            <p class="lead fs-3">
+              No ofrecemos servicio técnico oficial, pero brindamos asesoramiento honesto y útil para el cuidado y elección de tu equipo.
+            </p>
 
-          <p>
-            Nuestra tienda es 100% online y gestionamos cada venta de forma directa y segura. Estamos en constante crecimiento.
-          </p>
+            <p class="lead fs-3">
+              Nuestra tienda es 100% online y gestionamos cada venta de forma directa y segura. Estamos en constante crecimiento.
+            </p>
 
-          <!-- Frase final destacada como llamado a la acción o eslogan -->
-          <p class="fw-semibold">
-            Elegí MasiPhone: simple, confiable y 100% iPhone.
-          </p>
+            <p class="fw-semibold fs-3 mb-md-5 mb-3">
+              Elegí MasiPhone: simple, confiable y 100% iPhone.
+            </p>
+          </div>
         </div>
 
-        <!-- Columna con logo de la empresa, centrado y con estilo visual atractivo -->
-        <div class="col-lg-6 text-center">
-          <img src="../images/Productos Apple.png" alt="Productos Apple" class="img-fluid rounded shadow">
+        <!-- Columna con logo de la empresa, centrado en móviles -->
+        <div class="col-12 col-lg-6 d-flex justify-content-center">
+          <img src="../images/Productos Apple.png" alt="Productos Apple" class="img-fluid rounded shadow" style="max-width: 400px; width: 100%; height: auto;">
         </div>
       </div>
     </div>
   </section>
 </main>
+
 
     <!-- Pie de página con logo y redes -->
     <footer>

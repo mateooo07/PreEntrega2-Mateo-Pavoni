@@ -1,0 +1,23 @@
+{
+  "name": "preentrega2-mateo-pavoni",
+  "version": "1.0.0",
+  "description": "Sitio web desarrollado como parte del curso de desarrollo web de Coderhouse. El proyecto representa la presencia digital de **MasiPhone**, un emprendimiento joven de la ciudad de **Córdoba, Argentina**, dedicado a la venta de **iPhones** y productos Apple.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mateooo07/PreEntrega2-Mateo-Pavoni.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mateooo07/PreEntrega2-Mateo-Pavoni/issues"
+  },
+  "homepage": "https://github.com/mateooo07/PreEntrega2-Mateo-Pavoni#readme",
+  "devDependencies": {
+    "sass": "^1.89.0"
+  }
+}

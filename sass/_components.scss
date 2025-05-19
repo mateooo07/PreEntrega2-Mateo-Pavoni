@@ -1,0 +1,72 @@
+@use "variables";
+@use "mixins";
+
+.card-body,
+.formulario,
+#avisos-legales {
+  background-color: variables.$color-blanco;
+}
+
+.formulario {
+  border: 1px solid variables.$color-negro;
+}
+
+#avisos-legales {
+  padding: 1rem;
+  margin-top: 3rem;
+
+  p,
+  h4 {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.carousel .card {
+  height: 390px;
+}
+
+#cardCarrusel-info-general {
+  max-width: 100%;
+  height: 162px;
+
+  .carousel-item,
+  .card {
+    height: 100%;
+  }
+}
+
+.titulo {
+  font-size: variables.$fuente-titulo;
+  text-align: center;
+
+  @include mixins.responsive(768px) {
+    font-size: variables.$fuente-titulo-sm;
+  }
+}
+
+.subtitulo {
+  font-size: variables.$fuente-subtitulo;
+  text-align: center;
+
+  @include mixins.responsive(768px) {
+    font-size: variables.$fuente-subtitulo-sm;
+  }
+}
+
+#nombre-iphone-16 {
+  position: absolute;
+  top: 8rem;
+  left: 45%;
+  width: 10%;
+
+  @include mixins.responsive(768px) {
+    display: none;
+  }
+}
+
+i {
+  color: variables.$color-texto;
+  font-size: 3rem;
+  margin: 0.5rem;
+}
