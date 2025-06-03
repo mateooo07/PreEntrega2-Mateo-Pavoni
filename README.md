@@ -1,4 +1,4 @@
-# 📱 MasiPhone - PreEntrega2 | Mateo Pavoni
+# 📱 MasiPhone - Entrega Final | Mateo Pavoni
 
 Sitio web desarrollado como parte del curso de desarrollo web de Coderhouse. El proyecto representa la presencia digital de **MasiPhone**, un emprendimiento joven de la ciudad de **Córdoba, Argentina**, dedicado a la venta de **iPhones** y productos Apple.
 
@@ -6,7 +6,7 @@ Sitio web desarrollado como parte del curso de desarrollo web de Coderhouse. El 
 
 ## 🌐 Sitio Web
 
-🔗 [Ver repositorio en GitHub](https://github.com/mateooo07/PreEntrega2-Mateo-Pavoni)
+🔗 [Ver sitio publicado en GitHub Pages](https://mateooo07.github.io/PreEntrega2-Mateo-Pavoni/)
 
 ---
 
@@ -15,8 +15,11 @@ Sitio web desarrollado como parte del curso de desarrollo web de Coderhouse. El 
 - ✅ **HTML5**  
 - ✅ **CSS3**  
 - ✅ **Bootstrap 5**  
+- ✅ **SASS (SCSS)**  
 - ✅ **Responsive Design**  
-- ✅ **Google Fonts & FontAwesome**
+- ✅ **Google Fonts & FontAwesome**  
+- ✅ **SEO básico (meta tags optimizadas)**  
+- ✅ **Animaciones con CSS y Bootstrap**
 
 ---
 
@@ -24,13 +27,13 @@ Sitio web desarrollado como parte del curso de desarrollo web de Coderhouse. El 
 
 El sitio cuenta con 5 secciones principales:
 
-| Página             | Descripción                                                                 |
-|--------------------|-----------------------------------------------------------------------------|
-| 🏠 **Inicio**        | Página de bienvenida con imagen destacada, descripción del emprendimiento y navegación. |
-| 🛒 **Productos**     | Catálogo de iPhones disponibles, con precios e información destacada.      |
-| 📞 **Contacto**      | Formulario para consultas, pedidos o soporte, con opción de WhatsApp.      |
+| Página                  | Descripción                                                                 |
+|-------------------------|-----------------------------------------------------------------------------|
+| 🏠 **Inicio**             | Página de bienvenida con imagen destacada, descripción del emprendimiento y navegación. |
+| 🛒 **Productos**          | Catálogo de iPhones disponibles, con precios e información destacada.      |
+| 📞 **Contacto**           | Formulario para consultas, pedidos o soporte, con opción de WhatsApp.      |
 | ❓ **Preguntas Frecuentes** | Sección de ayuda con respuestas claras a dudas comunes de los clientes.  |
-| 👤 **Sobre Nosotros** | Historia de MasiPhone, valores, objetivos y visión del emprendimiento.     |
+| 👤 **Sobre Nosotros**      | Historia de MasiPhone, valores, objetivos y visión del emprendimiento.     |
 
 ---
 
@@ -43,10 +46,12 @@ El sitio está optimizado para adaptarse a **diferentes dispositivos**: celulare
 ## ✨ Características destacadas
 
 - Interfaz limpia y moderna, adaptada con Bootstrap.
-- Estructura clara y amigable para el usuario.
-- Enlaces funcionales a WhatsApp para contacto directo.
-- Selectores personalizados en formularios (por modelo de iPhone).
+- Estilos organizados usando **SASS** con uso de nesting, mixins y variables.
+- Animaciones suaves aplicadas a componentes clave.
+- SEO básico con etiquetas `meta` bien definidas para mejor indexación.
 - Código comentado para facilitar su comprensión y mantenimiento.
+- Enlaces funcionales a WhatsApp para contacto directo.
+- Formularios con selectores personalizados por modelo de iPhone.
 
 ---
 
@@ -55,12 +60,10 @@ El sitio está optimizado para adaptarse a **diferentes dispositivos**: celulare
 ```bash
 git clone https://github.com/mateooo07/PreEntrega2-Mateo-Pavoni.git
 cd PreEntrega2-Mateo-Pavoni
-```
 
 ---
 ## 📩 Contacto
 
 Creado con 💻 por **Mateo Pavoni**  
 📍 Córdoba, Argentina  
-📧 [mateopavoni6@gmail.com]  
-
+📧 [mateopavoni6@gmail.com]   
