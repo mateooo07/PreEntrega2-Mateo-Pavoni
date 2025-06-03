@@ -60,7 +60,7 @@ El sitio está optimizado para adaptarse a **diferentes dispositivos**: celulare
 ```bash
 git clone https://github.com/mateooo07/PreEntrega2-Mateo-Pavoni.git
 cd PreEntrega2-Mateo-Pavoni
-
+```
 ---
 ## 📩 Contacto
 
