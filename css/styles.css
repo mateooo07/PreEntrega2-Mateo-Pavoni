@@ -1,11 +1,5 @@
 @charset "UTF-8";
 /* Estilos generales */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   background-color: #f4f7fb;
   display: flex;
@@ -152,4 +146,10 @@ i {
   }
 }
 
-/*# sourceMappingURL=main.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=styles.css.map */

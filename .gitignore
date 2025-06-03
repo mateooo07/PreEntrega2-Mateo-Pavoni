@@ -1,2 +1,5 @@
 node_modules
-*.css.map
+package-lock.json
+package.json
+main.css.map
+styles.css.map
